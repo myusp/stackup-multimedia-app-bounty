@@ -10,7 +10,8 @@ export const data = [
         id: 2,
         name: 'Audio File',
         type: 'audio',
-        path: "/file-server/audio.mp3"
+        path: "/file-server/audio.mp3",
+        link:"1PwlksSAWUs",
     },
     {
         id: 3,
@@ -37,6 +38,7 @@ export const data = [
         id: 6,
         name: 'Sample Image 2',
         type: 'image',
-        path: '/file-server/image2.png'
+        path: '/file-server/image2.png',
+        link:"990IasdjvPBti",
     },
 ];

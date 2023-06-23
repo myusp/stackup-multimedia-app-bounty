@@ -41,7 +41,7 @@ export default function App() {
 
     let link = searchParams.get("file")
     if (link) {
-      setMyFiles(data.filter(d=>d.link == link))
+      setMyFiles(data.filter(d => d.link == link))
     } else {
       setMyFiles(data)
     }
@@ -202,7 +202,7 @@ export default function App() {
           </div>
           <div style={styles.filterContainer}>
             <div>
-              <DropdownFilter onChange={(v) => { setFilter(f => ({ ...f, type: v })) }} styleButton={{ position: showShareModal ||showChartModal ? "inherit" : "realtive" }} />
+              <DropdownFilter onChange={(v) => { setFilter(f => ({ ...f, type: v })) }} styleButton={{ position: showShareModal || showChartModal ? "inherit" : "realtive" }} />
             </div>
             <div style={{ width: "100%", marginLeft: 10 }}>
               <input style={{ width: "100%" }} type='text' placeholder='Search file here' onChange={(e) => { setFilter(f => ({ ...f, search: e.target.value })) }} value={filter.search}></input>

@@ -16,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy-bounty": "node compress-image.js && firebase deploy --only hosting:bounty ",
+    "deploy": "firebase deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +37,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "compress-images": "^2.0.5",
+    "gifsicle": "^5.2.1",
+    "pngquant-bin": "^6.0.1"
   }
 }

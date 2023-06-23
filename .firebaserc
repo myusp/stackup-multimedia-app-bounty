@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "myusp-multimedia-app-learn"
-  }
+  },
+  "targets": {
+    "myusp-multimedia-app-learn": {
+      "hosting": {
+        "learn": [
+          "myusp-multimedia-app-learn"
+        ],
+        "bounty": [
+          "myusp-multimedia-app-bounty"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
